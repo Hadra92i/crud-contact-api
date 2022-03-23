@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/', contactsRoutes);
-app.use('/users', authRoutes);
+app.use('/auth', authRoutes);
 
 
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
